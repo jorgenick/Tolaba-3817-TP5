@@ -11,32 +11,32 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-header{
-/*    en el encabezado inserto imagen*/
-    height: 100px;
-    background-image: url(../img/encabezado.jpg);
-    text-align: center;
-    color: aliceblue;
-    word-spacing: 10px;
+/* header{ */
+/* /*    en el encabezado inserto imagen*/ */
+/*     height: 100px; */
+/*     background-image: url(../img/encabezado.jpg); */
+/*     text-align: center; */
+/*     color: aliceblue; */
+/*     word-spacing: 10px; */
     
-}
-nav {
-    background: #000000;
-    height: 50px;
-    text-align:left;
-    font-size: 25px;
-    font-family: fantasy;
-    padding-top: 10px;
-}
+/* } */
+/* nav { */
+/*     background: #000000; */
+/*     height: 50px; */
+/*     text-align:left; */
+/*     font-size: 25px; */
+/*     font-family: fantasy; */
+/*     padding-top: 10px; */
+/* } */
 
-nav a{
-    color: #000000;
-    margin: 30px;
-    border: 1px solid;
-    border-color: #ff0000;
-    background: #2b8840;
-    border-radius: 10px;
-}
+/* nav a{ */
+/*     color: #000000; */
+/*     margin: 30px; */
+/*     border: 1px solid; */
+/*     border-color: #ff0000; */
+/*     background: #2b8840; */
+/*     border-radius: 10px; */
+/* } */
 
 section h2{
     background: #002860;

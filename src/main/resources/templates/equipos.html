@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Fixture</title>
-    <link rel="stylesheet" href="css/estilos.css">
+<!--     <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
  <div id="contenedor">
   <header>
-   <h1>Liga de Futbol Profesional</h1>
+  <div th:insert="layout/header :: header"></div>
     </header>
-            <nav>
-					<a href="Index.html">Home</a>
-					<a href="fixture.html" target="_blank">Fixture y resultados</a>
-					<a href="equipos.html" target="_blank">Equipos</a>
-			</nav>
+<!--             <nav> -->
+<!-- 					<a href="Index.html">Home</a> -->
+<!-- 					<a href="fixture.html" target="_blank">Fixture y resultados</a> -->
+<!-- 					<a href="equipos.html" target="_blank">Equipos</a> -->
+<!-- 			</nav> -->
     <section id="contenido3">
        <table>
            <tr class="fila">
@@ -69,5 +70,6 @@
         </table>
     </footer>
     </div>
+    
 </body>
 </html>

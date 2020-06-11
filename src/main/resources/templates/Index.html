@@ -5,104 +5,76 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <!--cuerpo de la pagina-->
 <body>
  <div id="contenedor">
 <!-- encabezado de la pagina-->
   <header>
-   <h1>Liga de Futbol Profesional</h1>
+   <h1 th:text=" 'Bienvenido! '+ ${usuario}+' '+ ${apellido}"></h1>
+   <div th:insert="layout/header :: header"></div>
     </header>
-<!--           Menu de opciones-->
-            <nav>
-                
-					<a href="Index.html">Home</a>
-					<a href="fixture.html" target="_blank">Fixture y resultados</a>
-					<a href="equipos.html" target="_blank">Equipos</a>
-					<div id="welcome">
-					<h4 th:text=" 'Bienvenido! '+ ${usuario}+ ${apellido}"></h4>
-					</div>
-			</nav>
-<!--			seccion contenido-->
-    <section id="contenido">
-       <h2>Noticias...</h2>
-<!--          creacion de tabla para oraganizar las noticicas-->
-           <table>
-           <tr>
-            <th><img src="img/suspensionPartido.jpg" width="200" height="150" alt="" ></th>
-           </tr>
-           <tr>
-            <th>
-            
-            12/03/20
-            <br>
-            <br>
-            Nueva norticia de los partidos suspendidos por la cuarentenabr <br>
-            Todos los partidos quedaron suspendidos a causa del covid-19
-            </th>
-           </tr>
-           </table>
-           
-            <table>
-           <tr>
-            <th><img src="img/repeticionPartidos.jpg" width="200" height="150" alt=""></th>
-           </tr>
-           <tr>
-            <th>13/03/20 <br><br>
-            Repeticion de la transmision en vivo de la final de la copa Argentina a travez de la tv publica. Esta noche empezara con el partido de ida.
-            </th>
-           </tr>
-           </table>
-           
-            <table>
-           <tr>
-            <th><img src="img/sorteos.jpg" width="200" height="150" alt=""></th>
-           </tr>
-           <tr>
-            <th>20/03/20 <br>
-            <br>
-            Reprogramacion de sorteos para las proximas fechas. El mismo se llevara a cabo los proximos dias
-            </th>
-           </tr>
-           </table>
-    </section>
-    <aside><h2>Auspiciantes</h2>
+    
+ <div class="container">
+		    <div class="row row-cols-1 row-cols-md-4">
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="img/suspensionPartido.jpg" width="200" height="150" class="card-img-top" alt="...">
+		      <div class="card-body">
+		        <h5 class="card-title">Partidos Suspendidos</h5>
+		        <p class="card-text">Nueva norticia de los partidos suspendidos por la cuarentenabr <br>
+            	Todos los partidos quedaron suspendidos a causa del covid-19</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="img/repeticionPartidos.jpg" width="200" height="150" class="card-img-top" alt="...">
+		      	<div class="card-body">
+		        <h5 class="card-title">Partidos Suspendidos</h5>
+		        <p class="card-text">Nueva norticia de los partidos suspendidos por la cuarentenabr <br>
+            	Todos los partidos quedaron suspendidos a causa del covid-19</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col mb-4">
+		    <div class="card">
+		      <img src="img/sorteos.jpg" width="200" height="150" class="card-img-top" alt="...">
+		        <div class="card-body">
+		        <h5 class="card-title">Partidos Suspendidos</h5>
+		        <p class="card-text">Nueva norticia de los partidos suspendidos por la cuarentenabr <br>
+            	Todos los partidos quedaron suspendidos a causa del covid-19</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col mb-4">
+		  <h2>Auspiciantes</h2>
 <!--    creacion de tabla para la publicidad-->
     <table>
         <tr>
 <!--           insertar imagenes para publicidad-->
-            <img src="img/auspiciantes/adidas.png" width="100%" height="100px" alt="">
+            <img src="" width="100%" height="100px" alt="">
         </tr>
             <tr>
                 <img src="img/auspiciantes/chevroltet.jpg" width="100%" height="100" alt="">
         </tr>
         <tr>
                 <img src="img/auspiciantes/ford.jpg" width="100%" height="100px" alt="">
-    
         </tr>
         <tr>
             <img src="img/auspiciantes/auspiciante2.png" width="100%" height="100" alt="">
-
         </tr>
      </table>
-    </aside>
-     <footer>
-        <h2>Avda. Pedro Ortiz de Zarate Nº455 - Tel 388 4789555 </h2>
-        <table>
-           <tr>
-            <td>
-                <img src="img/contacto/wsp.png" width="50px" height="50px" alt="">
-            </td>
-            <td><img src="img/contacto/facebook.png" width="50px" height="50px" alt=""></td>
-            <td><img src="img/contacto/instagram.png" width="50px" height="50px" alt=""></td>
-            </tr>
-            <tr>
-                <td>Whatssapp: 3884 789 789</td>
-                <td>Facebook: franyoset@gmail.com</td>
-                <td>Instagram: pollofran@gmail</td>
-            </tr>
-        </table>
-    </footer>
+  
+		   </div>
+		  
+		</div>
+</div>
+    
+
+    
+	<div th:insert="layout/footer :: footer"></div>
     </div>
 </body>
 </html>

@@ -69,7 +69,7 @@ public class Tolaba3817Tp5Application implements CommandLineRunner{
 		usuario.setDni(37502020);
 		usuario.setFechaAlta(LocalDate.now());
 		usuario.setFechaNacimiento(LocalDate.of(1993, 06, 17));
-		usuario.setNombre("Juan");
+		usuario.setNombre("Jorge");
 		usuario.setPassword("123");
 		usuario.setTipo("SOCIO");
 		

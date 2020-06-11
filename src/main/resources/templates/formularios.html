@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formularios</title>
+<link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="css/estilos.css"> -->
+</head>
+
+
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item"><a id="formulario-tab" th:classappend="${formTab}" 
+				class="nav-link" href="#formulario" data-toggle="tab"
+				role="tab" aria-controls="formulario" aria-selected="true">Formulario</a></li>
+				
+			<li class="nav-item"><a id="lista-tab"  class="nav-link" th:classappend="${listTab}"
+				href="#lista" data-toggle="tab" role="tab" aria-controls="lista"
+				aria-selected="false">Lista</a></li>
+		</ul>
+
+<body class="container">
+			<h1><div th:text=" 'Bienvenido '+ ${usuario}+' '+${apellido}"></div></h1>
+			
+			<div th:insert="layout/header :: header"></div>
+			<div class="table-responsive">
+					<table class="table table-striped">
+					  <thead>
+					    <tr>
+					      <th scope="col"></th>
+					      <th scope="col">First</th>
+					      <th scope="col">Last</th>
+					      <th scope="col">Handle</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>Mark</td>
+					      <td>Otto</td>
+					      <td>@mdo</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>Jacob</td>
+					      <td>Thornton</td>
+					      <td>@fat</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>Larry</td>
+					      <td>the Bird</td>
+					      <td>@twitter</td>
+					    </tr>
+					  </tbody>
+					  
+					</table>
+			</div>
+			
+<form>
+	<div class="form-group row">
+		<div class="col-sm-6">
+			  <div class="form-group row">
+			  	<label for="idnombre" class="col-sm-4 col-form-label">Nombre</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" id="idnombre">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="idapellido" class="col-sm-4 col-form-label">Apellido</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" id="idnombre">
+			    </div>
+			  </div>	  
+			  <div class="form-group row">
+			    <label for="iddni" class="col-sm-4 col-form-label">DNI</label>
+			    <div class="col-sm-8">
+			      <input type="number" class="form-control" id="idnombre">
+			    </div>
+			  </div>
+		</div>
+		<div class="col-sm-6">
+			  <div class="form-group row">
+			    <label for="iddireccion" class="col-sm-4 col-form-label">Direccion</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" id="idnombre">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="idfechanac" class="col-sm-4 col-form-label">Fecha de Nacimiento</label>
+			    <div class="col-sm-8">
+			      <input type="date" class="form-control" id="idnombre">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="idfechaalta" class="col-sm-4 col-form-label">Fecha de Alta</label>
+			    <div class="col-sm-8">
+			      <input type="date" class="form-control" id="idnombre">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="inputPassword3" class="col-sm-4 col-form-label">Ingrese Contraseña</label>
+			    <div class="col-sm-8">
+			      <input type="password" class="form-control" id="inputPassword3">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <div class="col-sm-12">
+			      <button type="submit" class="btn btn-primary">Enviar</button>
+			    </div>
+			  </div>
+		</div>
+	</div>
+</form>
+			
+			
+
+			
+			<svg class="bi bi-camera-video" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  			<path fill-rule="evenodd" d="M2.667 3.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V4.667c0-.645-.522-1.167-1.167-1.167H2.667zM.5 4.667C.5 3.47 1.47 2.5 2.667 2.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H2.667A2.167 2.167 0 0 1 .5 11.333V4.667z"/>
+  			<path fill-rule="evenodd" d="M11.25 5.65l2.768-1.605a.318.318 0 0 1 .482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V4.308c0-1.033-1.125-1.626-1.984-1.128L10.75 4.785l.502.865z"/>
+			</svg>
+
+			
+
+			
+			<div th:insert="layout/footer :: footer"></div>
+
+</body>
+
+
+
+</html>

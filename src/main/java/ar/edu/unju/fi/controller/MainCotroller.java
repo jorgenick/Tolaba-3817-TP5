@@ -24,5 +24,23 @@ public class MainCotroller {
 		model.addAttribute("apellido",usuarioService.mostrar().getApellido());
 		return "index";
 	}
+	
+	@RequestMapping("/formularios")
+	public String formularios(Model model) {
+		model.addAttribute("usuario",usuarioService.mostrar().getNombre());
+		model.addAttribute("apellido",usuarioService.mostrar().getApellido());
+		return "formularios";
+	}
+	@RequestMapping("/equipos")
+	public String equipos(Model model) {
+
+		return "equipos";
+	}
+	
+	@RequestMapping("/fixture")
+	public String fixture(Model model) {
+
+		return "fixture";
+	}
 
 }

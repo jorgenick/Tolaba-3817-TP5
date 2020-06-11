@@ -9,6 +9,12 @@ import org.springframework.stereotype.Component;
  * @author Jorge Tolaba
  */
 @Component
+/**
+ * @Entity Se establece que esta clase se 
+ * comportara como una entidad
+ */
+//@Entity
+//@Table(name ="equipos")
 public class Equipo {
 	/**
 	 * nombre del equipo
