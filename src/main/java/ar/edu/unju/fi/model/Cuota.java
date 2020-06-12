@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.model;
-
+/**Comentario de prueba GIT HUB
+ * 
+ */
 import java.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
