@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.controller;
-
+/**
+ * Comentario de prueba de HIt HUB 2do comentario
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
